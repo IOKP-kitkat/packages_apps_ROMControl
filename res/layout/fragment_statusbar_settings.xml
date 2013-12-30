@@ -96,8 +96,19 @@
                 />
 
         <com.aokp.romcontrol.widgets.CategorySeparator
-                style="@style/defaultSize"
-                android:title="@string/category_statusbar_clock"/>
+            style="@style/defaultSize"
+            android:title="@string/category_signalbars"/>
+
+        <com.aokp.romcontrol.settings.CheckboxSetting
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:title="@string/statusbar_signal_text_title"
+            android:summary="@string/statusbar_signal_text_summary"
+            android:key="statusbar_signal_text"
+            />
+
+    </LinearLayout>
 
         <com.aokp.romcontrol.settings.SingleChoiceSetting
                 android:layout_width="match_parent"
@@ -157,5 +168,6 @@
             android:key="statusbar_hide_signal_bars"
             />
 
-</LinearLayout>
+    </LinearLayout>
+
 </ScrollView>
