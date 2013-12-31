@@ -86,6 +86,11 @@
     <string name="ime_switcher_title">Show IME Switcher</string>
     <string name="ime_switcher_summary">In Statusbar while typing</string>
 
+    <string name="battery_percentage_indicator_title">Show battery percentage indicator</string>
+    <string name="battery_percentage_indicator_summary">Show battery percentage indicator front of battery icon</string>
+    <string name="hide_battery_icon_title">Hide battery icon</string>
+    <string name="hide_battery_icon_summary">Completly hide battery icon from statusbar</string>
+
     <!-- Installer -->
     <string name="persist_options">Persistence</string>
     <string name="persist_enable">Enable Persistence</string>
@@ -94,6 +99,8 @@
     <string name="persist_prop_density_summary">Persist LCD density</string>
     <string name="persist_file_hosts">Persist Hosts</string>
     <string name="persist_file_hosts_summary">Persist hosts file</string>
+    <string name="persist_file_xposed">Persist Xposed</string>
+    <string name="persist_file_xposed_summary">Persist file app_process for Xposed framework</string>
 
     <!-- Toggles -->
     <string name="title_toggles">Toggles</string>
@@ -109,10 +116,22 @@
     <string name="toggle_dialog_add_toggles">Add a toggle</string>
     <string name="toggle_swap_handle_side">Drag handle on right</string>
     <string name="toggles_style_title">Toggle style</string>
-
     <string name="toggles_per_row_title">Toggles per row</string>
     <string name="toggles_per_row_three">3</string>
     <string name="toggles_per_row_four">4</string>
     <string name="toggles_per_row_five">5</string>
     <string name="add_toggles">Add toggle</string>
+
+    <string name="toggles_enable_fasttoggle_title">Enable fast toggle</string>
+    <string name="toggles_enable_fasttoggle_summary">Overrides default behavior</string>
+    <string name="toggles_choose_fasttoggle_side_title">Choose fast toggle side</string>
+    <string name="toggles_choose_fasttoggle_side_summary">Select the side that triggers the fast toggle</string>
+    <string name="right">Right</string>
+    <string name="left">Left</string>
+
+    <string name="toggles_swipe_to_switch_title">Swipe to switch</string>
+    <string name="toggles_swipe_to_switch_summary">Swipe to switch between notifications and Quick Settings</string>
+    <string name="toggle_tab_arrange">Toggle Setup</string>
+    <string name="toggles_tab_settings">Configure</string>
+    <string name="toggles_arrange_instructions">Rearrange by dragging by the handle on the right. Remove by swiping.</string>
 </resources>

@@ -11,11 +11,12 @@ import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
 import com.aokp.romcontrol.fragments.AboutFragment;
-import com.aokp.romcontrol.fragments.ArrangeTogglesFragment;
 import com.aokp.romcontrol.fragments.GeneralSettingsFragment;
 import com.aokp.romcontrol.fragments.HardwareKeysFragment;
+import com.aokp.romcontrol.fragments.InstallerSettingsFragment;
 import com.aokp.romcontrol.fragments.NavigationDrawerFragment;
 import com.aokp.romcontrol.fragments.StatusbarSettingsFragment;
+import com.aokp.romcontrol.fragments.TogglesTabHostFragment;
 
 
 public class MainActivity extends Activity
@@ -49,6 +50,9 @@ public class MainActivity extends Activity
         mNavigationDrawerFragment.setUp(
                 R.id.navigation_drawer,
                 (DrawerLayout) findViewById(R.id.drawer_layout));
+
+        ActionBar bar = getActionBar();
+        bar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
     }
 
     @Override
@@ -82,11 +86,12 @@ public class MainActivity extends Activity
                 break;
 
             case 4:
-                fragment = new ArrangeTogglesFragment();
+                fragment = new TogglesTabHostFragment();
                 break;
-            /**case 4:
+
+            case 5:
                 fragment = new InstallerSettingsFragment();
-                break;*/
+                break;
         }
         return fragment;
     }
