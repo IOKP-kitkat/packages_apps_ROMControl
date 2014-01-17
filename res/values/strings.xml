@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">ROM Control</string>
-    <string name="rom_control">ROM Control</string>
+    <string name="app_name">ROM control</string>
+    <string name="rom_control">ROM control</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
@@ -10,11 +10,11 @@
     <string name="category_general">General</string>
     <string name="category_statusbar">Statusbar</string>
     <string name="category_about_aokp">About</string>
-    <string name="category_hardware_keys">Hardware Keys</string>
+    <string name="category_hardware_keys">Hardware keys</string>
     <string name="category_lockscreen">Lockscreen</string>
     <string name="category_installer">Installer</string>
     <string name="category_toggles">Toggles</string>
-    <string name="category_navring">Navigation Ring</string>
+    <string name="category_navring">Navigation ring</string>
     <string name="category_navbar">Navigation bar</string>
 
     <!-- Menu Items -->
@@ -50,8 +50,8 @@
     <string name="mgerrit_changelog_summary">Our public repo. Check it for latest changes.</string>
 
     <!-- Color Picker -->
-    <string name="dialog_color_picker">Color Picker</string>
-    <string name="press_color_to_apply">Press on Color to apply</string>
+    <string name="dialog_color_picker">Color picker</string>
+    <string name="press_color_to_apply">Press on color to apply</string>
     <string name="arrow_right">→</string>
     <string name="arrow_down">↓</string>
     <string name="hex">Hex:</string>
@@ -82,6 +82,8 @@
     </string>
     <string name="wakeup_when_plugged_unplugged_title">Wake up on charger</string>
     <string name="wakeup_when_plugged_unplugged_summary">Wake up device if a charger is plugged in or unplugged</string>
+    <string name="ram_bar_title">Recents RAM bar</string>
+    <string name="ram_bar_summary">Shows RAM usage in the recent apps window</string>
     <string name="category_advanced">Advanced</string>
     <string name="title_hardware_keys_volume_keys_double_tap">Volume Smash Rotation</string>
     <string name="summary_hardware_keys_volume_keys_double_tap">Whether double tapping the volume keys will lock and unlock the auto-rotate setting</string>
@@ -228,9 +230,9 @@
     <string name="custom_app_icon_successfully">"'s icon set successfully!"</string>
 
     <!-- Lockscreen -->
-    <string name="volume_wake_screen">Volume Rocker Wake</string>
-    <string name="volume_wake_screen_summary">Use the volume keys wake the screen.</string>
-    <string name="volume_music_controls">Volume Music Controls</string>
+    <string name="volume_wake_screen">Volume rocker wake</string>
+    <string name="volume_wake_screen_summary">Use the volume keys to wake the screen</string>
+    <string name="volume_music_controls">Volume music controls</string>
     <string name="volume_music_controls_summary">Whether volume up/down can be long pressed to skip track</string>
     <string name="lockscreen_minimize_challenge_title">Minimize lockscreen challenge</string>
     <string name="lockscreen_minimize_challenge_summary">Set wether the lockscreen challenge (circle, pattern, pin) is minimized when the screen is turned on.</string>
