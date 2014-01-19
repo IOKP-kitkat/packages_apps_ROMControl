@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * Copyright (c) 2013, The Android Open Kang Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
 <resources>
     <!-- * 0 - Nothing
          * 1 - Menu
@@ -113,42 +131,4 @@
         <item>**icon**</item>
     </string-array>
 
-    <!-- clock stuff -->
-    <string-array name="statusbar_clock_styleEntries" translatable="false">
-        <item>@string/right_clock</item>
-        <item>@string/center_clock</item>
-        <item>@string/no_clock</item>
-    </string-array>
-    <string-array name="statusbar_clock_styleValues" translatable="false">
-        <item>1</item>
-        <item>2</item>
-        <item>0</item>
-    </string-array>
-    <string-array name="statusbar_clock_am_pm_styleEntries" translatable="false">
-        <item>@string/dont_show</item>
-        <item>@string/small_am_pm</item>
-        <item>@string/regular_am_pm</item>
-    </string-array>
-    <string-array name="statusbar_clock_am_pm_styleValues" translatable="false">
-        <item>2</item>
-        <item>1</item>
-        <item>0</item>
-    </string-array>
-    <string-array name="statusbar_clock_weekdayEntries" translatable="false">
-        <item>@string/dont_show</item>
-        <item>@string/small_weekday</item>
-        <item>@string/regular_weekday</item>
-    </string-array>
-    <string-array name="statusbar_clock_weekdayValues" translatable="false">
-        <item>0</item>
-        <item>1</item>
-        <item>2</item>
-    </string-array>
-
-    <string name="setting_key_home_long_press_action_nothing">Nothing</string>
-    <string name="setting_key_home_long_press_action_menu">Menu</string>
-    <string name="setting_key_home_long_press_action_appswitch">App-switch</string>
-    <string name="setting_key_home_long_press_action_search">Search</string>
-    <string name="setting_key_home_long_press_action_voicesearch">Voice search</string>
-    <string name="setting_key_home_long_press_action_inappsearch">In-app search</string>
 </resources>
