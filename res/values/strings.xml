@@ -87,8 +87,8 @@
     <string name="category_advanced">Advanced</string>
     <string name="title_hardware_keys_volume_keys_double_tap">Volume Smash Rotation</string>
     <string name="summary_hardware_keys_volume_keys_double_tap">Whether double tapping the volume keys will lock and unlock the auto-rotate setting</string>
-    <string name="ram_bar_title">Recents RAM bar</string>
-    <string name="ram_bar_summary">Shows RAM usage in the recent apps window</string>
+    
+    
 
     <!-- Hardware keys -->
     <string name="title_hardware_keys_home_long_press">Home - long press</string>
@@ -109,9 +109,9 @@
     <string name="setting_key_home_long_press_action_voicesearch">Voice search</string>
     <string name="setting_key_home_long_press_action_inappsearch">In-app search</string>
 
-    <string name="category_advanced">Advanced</string>
-    <string name="title_hardware_keys_volume_keys_double_tap">Volume smash rotation</string>
-    <string name="summary_hardware_keys_volume_keys_double_tap">Whether double tapping the volume keys will lock and unlock the auto-rotate setting</string>
+    
+    
+    
 
     <!-- Statusbar Notifications -->
     <string name="category_statusbar_notification">Notifications</string>
@@ -125,7 +125,6 @@
     <string name="vibrate_notif_expand_summary">Vibrate when expanding notifications</string>
     <string name="notification_count_title">Show notification count</string>
     <string name="notification_count_summary">Display number of pending notifications in the Statusbar</string>
-
     <string name="statusbar_clock_am_pm_style_title">AM/PM style</string>
     <string name="statusbar_clock_am_pm_style_summary">How is AM/PM displayed</string>
     <string name="statusbar_clock_style_title">Clock style</string>
@@ -142,33 +141,17 @@
     <string name="regular_weekday">Regular weekday</string>
     <string name="statusbar_clock_color_title">Clock color</string>
     <string name="statusbar_clock_color_summary">Clock color displayed in status bar</string>
-
     <string name="battery_percentage_indicator_title">Show battery % indicator</string>
     <string name="battery_percentage_indicator_summary">Show battery percentage indicator front of battery icon</string>
     <string name="battery_percentage_indicator_plugged_title">Indicate charging</string>
     <string name="battery_percentage_indicator_plugged_summary">Show battery percentage indicator in different color during charging</string>
     <string name="hide_battery_icon_title">Hide battery icon</string>
     <string name="hide_battery_icon_summary">Completly hide battery icon from statusbar</string>
-
-    <string name="statusbar_clock_am_pm_style_title">AM/PM style</string>
-    <string name="statusbar_clock_style_title">Clock style</string>
-    <string name="statusbar_clock_weekday_title">Day of the week</string>
-    <string name="right_clock">Right clock</string>
-    <string name="center_clock">Center clock</string>
-    <string name="no_clock">No clock</string>
-    <string name="dont_show">Don\'t show</string>
-    <string name="small_am_pm">Small AM/PM</string>
-    <string name="regular_am_pm">Regular AM/PM</string>
-    <string name="small_weekday">Small weekday</string>
-    <string name="regular_weekday">Regular weekday</string>
-    <string name="statusbar_hide_signal_bars_title">Hide Signal Bars</string>
     <string name="statusbar_hide_signal_bars_summary">Ability to hide the signal bars</string>
     <string name="category_signalbars">Signal Bars</string>
     <string name="statusbar_signal_text_title">Show signal text</string>
     <string name="statusbar_signal_text_summary">Show signal with dBm</string>
     <string name="statusbar_hide_signal_bars_title">Hide Signal Bars</string>
-    <string name="statusbar_hide_signal_bars_summary">Ability to hide the signal bars</string>
-
     <string name="status_bar_network_title">Network traffic</string>
     <string name="status_bar_show_network_stats_title">Show network speeds</string>
     <string name="status_bar_show_network_stats_summary">Show network speeds in statusbar</string>
