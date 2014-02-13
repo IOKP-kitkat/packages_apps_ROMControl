@@ -1,3 +1,19 @@
+/*
+ * Copyright (C) 2013 The Android Open Kang Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.aokp.romcontrol;
 
 import android.app.ActionBar;
@@ -7,23 +23,32 @@ import android.app.FragmentManager;
 import android.content.ComponentName;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v4.widget.DrawerLayout;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import android.view.View;
+import com.aokp.romcontrol.fragments.about.AboutFragment;
+import com.aokp.romcontrol.fragments.AnimationsFragment;
 import com.aokp.romcontrol.fragments.GeneralSettingsFragment;
 import com.aokp.romcontrol.fragments.HardwareKeysFragment;
 import com.aokp.romcontrol.fragments.InstallerSettingsFragment;
 import com.aokp.romcontrol.fragments.LockscreenSettingsFragment;
 import com.aokp.romcontrol.fragments.NavRingTargets;
 import com.aokp.romcontrol.fragments.NavigationDrawerFragment;
+import com.aokp.romcontrol.fragments.PowerMenuSettingsFragment;
+import com.aokp.romcontrol.fragments.ribbons.RibbonsFragment;
 import com.aokp.romcontrol.fragments.StatusbarSettingsFragment;
+import com.aokp.romcontrol.fragments.SoundSettingsFragment;
 import com.aokp.romcontrol.fragments.about.AboutTabHostFragment;
 import com.aokp.romcontrol.fragments.navbar.NavbarTabHostFragment;
 import com.aokp.romcontrol.fragments.toggles.TogglesTabHostFragment;
-import com.aokp.romcontrol.fragments.SoundSettingsFragment;
+
 
 public class MainActivity extends Activity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
+
 
     /**
      * Fragment managing the behaviors, interactions and presentation of the navigation drawer.
@@ -97,19 +122,31 @@ public class MainActivity extends Activity
                 break;
 
             case 6:
-                fragment = new NavbarTabHostFragment();
+                fragment = new PowerMenuSettingsFragment();
                 break;
 
             case 7:
-                fragment = new NavRingTargets();
+                fragment = new NavbarTabHostFragment();
                 break;
 
             case 8:
-                fragment = new SoundSettingsFragment();
+                fragment = new NavRingTargets();
                 break;
 
             case 9:
+                fragment = new SoundSettingsFragment();
+                break;
+
+            case 10:
                 fragment = new InstallerSettingsFragment();
+                break;
+
+            case 11:
+                fragment = new RibbonsFragment();
+                break;
+
+            case 12:
+                fragment = new AnimationsFragment();
                 break;
         }
         return fragment;
@@ -167,6 +204,4 @@ public class MainActivity extends Activity
         int componentStatus = p.getComponentEnabledSetting(new ComponentName(this, LauncherActivity.class));
         return componentStatus != PackageManager.COMPONENT_ENABLED_STATE_DISABLED;
     }
-
-
 }

@@ -1,3 +1,19 @@
+/*
+ * Copyright (C) 2013 The Android Open Kang Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.aokp.romcontrol.fragments;
 
 import android.app.Fragment;
@@ -21,13 +37,13 @@ public class HardwareKeysFragment extends Fragment {
     CheckboxSetting setting_customize;
 
     SingleChoiceSetting setting_key_home_long_press, setting_key_home_double_tap;
+    SingleChoiceSetting setting_key_back, setting_key_back_long_press;
     SingleChoiceSetting setting_key_menu, setting_key_menu_long_press;
     SingleChoiceSetting setting_key_search, setting_key_search_long_press;
     SingleChoiceSetting setting_key_recents, setting_key_recents_long_press;
-    SingleChoiceSetting setting_key_camera;
 
     int hardwareKeyMask;
-    boolean mHasMenu, mHasHome, mHasAssist, mHasAppSwitch, mHasCamera;
+    boolean mHasMenu, mHasBack, mHasHome, mHasAssist, mHasAppSwitch;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -36,10 +52,10 @@ public class HardwareKeysFragment extends Fragment {
         hardwareKeyMask = getActivity().getResources()
                 .getInteger(com.android.internal.R.integer.config_deviceHardwareKeys);
         mHasMenu = (hardwareKeyMask & KEY_MASK_MENU) != 0;
+        mHasBack = (hardwareKeyMask & KEY_MASK_BACK) != 0;
         mHasHome = (hardwareKeyMask & KEY_MASK_HOME) != 0;
         mHasAssist = (hardwareKeyMask & KEY_MASK_ASSIST) != 0;
         mHasAppSwitch = (hardwareKeyMask & KEY_MASK_APP_SWITCH) != 0;
-        mHasCamera = (hardwareKeyMask & KEY_MASK_CAMERA) != 0;
     }
 
     @Override
@@ -64,6 +80,11 @@ public class HardwareKeysFragment extends Fragment {
             setting_key_home_double_tap.setVisibility(View.GONE);
         }
 
+        setting_key_back_long_press = (SingleChoiceSetting) v.findViewById(R.id.setting_key_back_long_press);
+        if (!mHasBack) {
+            setting_key_back_long_press.setVisibility(View.GONE);
+        }
+
         setting_key_menu = (SingleChoiceSetting) v.findViewById(R.id.setting_key_menu);
         setting_key_menu_long_press = (SingleChoiceSetting) v.findViewById(R.id.setting_key_menu_long_press);
         if (!mHasMenu) {
@@ -83,11 +104,6 @@ public class HardwareKeysFragment extends Fragment {
         if (!mHasAppSwitch) {
             setting_key_recents.setVisibility(View.GONE);
             setting_key_recents_long_press.setVisibility(View.GONE);
-        }
-
-        setting_key_camera = (SingleChoiceSetting) v.findViewById(R.id.setting_key_camera);
-        if (!mHasCamera) {
-            setting_key_camera.setVisibility(View.GONE);
         }
 
         return v;
