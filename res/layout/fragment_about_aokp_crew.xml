@@ -69,6 +69,15 @@
                 android:layout_height="wrap_content"
                 />
 
+        <com.aokp.romcontrol.widgets.DeveloperPreference
+                android:title="xxWhiterhinoxx"
+                aokp:nameDev="XxWhiterhinoxX"
+                aokp:twitterHandle="X_WhiTeRhiNo_X"
+                aokp:githubLink="@string/github_xxWhiterhinoxx"
+                aokp:emailDev="whiterhino0707@gmail.com"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
         
     </LinearLayout>
 </ScrollView>
