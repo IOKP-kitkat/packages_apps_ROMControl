@@ -26,7 +26,7 @@
 
     <!-- About -->
     <string name="devs">The Crew</string>
-    <string name="aokp">Infamous Open Kang Project</string>
+    <string name="aokp" translatable="false">Infamous Open Kang Project</string>
     <string name="aokp_website_title">IOKP Website</string>
     <string name="aokp_website_summary">Where we call home.</string>
     <string name="aokp_review_title">Downloads</string>
@@ -35,18 +35,18 @@
     <string name="aokp_irc_summary">Our public repo. Check it for latest changes.</string>
     <string name="about_aokp">About IOKP</string>
     <string name="about_aokp_summary">@null</string>
-    <string name="donate_iokp">http://goo.gl/V01Vqx</string>
-    <string name="github_iokp">https://github.com/IOKP-kitkat</string>
-    <string name="github_midnightRider67">https://github.com/MidnightRider67</string>
-    <string name="github_djmatt604">https://github.com/djmatt604</string>
-    <string name="github_octane70">https://github.com/Octane70</string>
-    <string name="github_mgbotoe">https://github.com/mgbotoe</string>
-    <string name="github_jamison904">https://github.com/jamison904</string>
-    <string name="github_mrimp">https://github.com/mrimp</string>
-    <string name="github_xxWhiterhinoxx">https://github.com/XxWhiterhinoxX</string>
-    <string name="url_aokp">http://www.infamousdevelopment.com</string>
-    <string name="url_aokp_gerrit">http://goo.gl/6UENPD</string>
-    <string name="url_aokp_irc">https://github.com/IOKP-kitkat</string>
+    <string name="donate_iokp" translatable="false">http://goo.gl/V01Vqx</string>
+    <string name="github_iokp" translatable="false">https://github.com/IOKP-kitkat</string>
+    <string name="github_midnightRider67" translatable="false">https://github.com/MidnightRider67</string>
+    <string name="github_djmatt604" translatable="false">https://github.com/djmatt604</string>
+    <string name="github_octane70" translatable="false">https://github.com/Octane70</string>
+    <string name="github_mgbotoe" translatable="false">https://github.com/mgbotoe</string>
+    <string name="github_jamison904" translatable="false">https://github.com/jamison904</string>
+    <string name="github_mrimp" translatable="false">https://github.com/mrimp</string>
+    <string name="github_xxWhiterhinoxx" translatable="false">https://github.com/XxWhiterhinoxX</string>
+    <string name="url_aokp" translatable="false">http://www.infamousdevelopment.com</string>
+    <string name="url_aokp_gerrit" translatable="false">http://goo.gl/6UENPD</string>
+    <string name="url_aokp_irc" translatable="false">https://github.com/IOKP-kitkat</string>
     <string name="android_open_kang_project">Infamous Open Kang Project</string>
     <string name="kanglings">The Infamous</string>
 
